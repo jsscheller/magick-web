@@ -1,0 +1,8 @@
+node_modules
+out
+target
+assets
+lib
+*.sublime-project
+*.sublime-workspace
+*.DS_Store

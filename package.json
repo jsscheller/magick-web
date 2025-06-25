@@ -1,0 +1,18 @@
+{
+  "name": "magick-web",
+  "version": "0.1.0",
+  "description": "magick CLI compiled to WASM via Emscripten",
+  "type": "module",
+  "main": "magick.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsscheller/runish.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.21.2",
+    "runish": "^0.1.0",
+    "serdev": "^0.1.0",
+    "uvu": "^0.5.6"
+  }
+}
