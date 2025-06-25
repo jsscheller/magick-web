@@ -6,6 +6,7 @@ const OUT_DIR = path.resolve("./out/release");
 const { LIVE } = process.env;
 
 async function main() {
+  await fs.rm(OUT_DIR, { force: true, recursive: true });
   await fs.mkdir(OUT_DIR, { recursive: true });
 
   for (const filePath of [
@@ -15,7 +16,7 @@ async function main() {
     "README.md",
     "LICENSE",
   ]) {
-    await fs.cp(filePath, path.join(OUT_DIR, filePath));
+    await fs.cp(filePath, path.join(OUT_DIR, path.basename(filePath)));
   }
 
   const otp = process.argv.find((x) => x.startsWith("--otp="));

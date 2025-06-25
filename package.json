@@ -1,12 +1,12 @@
 {
   "name": "magick-web",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "magick CLI compiled to WASM via Emscripten",
   "type": "module",
   "main": "magick.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jsscheller/runish.git"
+    "url": "git+https://github.com/jsscheller/magick-web.git"
   },
   "license": "MIT",
   "devDependencies": {
